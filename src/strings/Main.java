@@ -17,34 +17,46 @@ public class Main {
         String task = sc.nextLine();
         switch (task) {
             case ("one"):
+                System.out.println("Write a Java program to find the maximum occurring character in a string");
+                System.out.println();
                 System.out.println("Input your String ");
-                String st1 = sc.nextLine();
-                System.out.println(stringTasks.MaxOccurChar(st1));
+                String str = sc.nextLine();
+                System.out.println("Maximum occuring character in a string is: " + stringTasks.MaxOccurChar(str));
                 break;
             case ("two"):
+                System.out.println(" Write a Java program to reverse words in a given string");
+                System.out.println();
                 System.out.println("Input your String ");
-                String st2 = sc.nextLine();
-                System.out.println(stringTasks.reverseString(st2));
+                str = sc.nextLine();
+                System.out.println("Reverse words in a given string is: " + stringTasks.reverseString(str));
                 break;
             case ("three"):
+                System.out.println("Write a Java program to remove \"b\" and \"ac\" from a given string.");
+                System.out.println();
                 System.out.println("Input your String ");
-                String st3 = sc.nextLine();
-                System.out.println(stringTasks.removeString(st3));
+                 str = sc.nextLine();
+                System.out.println("New string without \"b\" and \"ac\" is: " + stringTasks.removeString(str));
                 break;
             case ("four"):
+                System.out.println("Write a Java program to check whether the character immediately before and after of # is same in a given string. ");
+                System.out.println();
                 System.out.println("Input your String ");
-                String st4 = sc.nextLine();
-                System.out.println(stringTasks.redBlue(st4));
+                str = sc.nextLine();
+                System.out.println("Are the characters immediately befor and after of \"#\"? " + stringTasks.sameChar(str));
                 break;
             case ("five"):
+                System.out.println("Write a Java program to check whether the string 'red' and 'blue' appear in same number of times in a given string");
+                System.out.println();
                 System.out.println("Input your String ");
-                String st5 = sc.nextLine();
-                System.out.println(stringTasks.repeatChar(st5));
+                str = sc.nextLine();
+                System.out.println("String \"red\" and \"blue\" appear in same number of times: " + stringTasks.redBlue(str));
                 break;
             case ("six"):
+                System.out.println(" Write a Java program to repeat every character twice in the original string.");
+                System.out.println();
                 System.out.println("Input your String ");
-                String st6 = sc.nextLine();
-                System.out.println(stringTasks.sameChar(st6));
+                str = sc.nextLine();
+                System.out.println("New string with all repeated characters is: " + stringTasks.repeatChar(str));
                 break;
             default:
                 System.out.println("Incorrect number of task;");
