@@ -9,7 +9,7 @@ public class Main {
 
         System.out.println(" one - find maximum occuring character in string;");
         System.out.println(" two - reverse words in given string;");
-        System.out.println(" three - remote (b) and (ac) from a given string;");
+        System.out.println(" three - remote \"b\" and \"ac\" from a given string;");
         System.out.println(" four - check chars before and after #;");
         System.out.println(" five - Red and Blue task;");
         System.out.println(" six - repeat every char twice in the original string;");
