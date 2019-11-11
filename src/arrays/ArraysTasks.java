@@ -17,7 +17,7 @@ public class ArraysTasks {
         System.out.println("8. test the equality of two arrays.");
         System.out.println("9. get the difference between the largest and smallest values in an array of integers. The length of the array must be 1 and above.");
         System.out.println("10. check if an array of integers without 0 and -1.");
-        
+
         System.out.println("Input number of task: ");
         String numberOfTask = scan.nextLine();
         switch (numberOfTask){
