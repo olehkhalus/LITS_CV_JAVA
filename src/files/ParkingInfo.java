@@ -19,9 +19,16 @@ public class ParkingInfo {
                 continue;
             }
 
-            printAllParkingLotsOfMyTime(setTimeOfParking(),printWorkHourStart(line),printWorkHourEnd(line),line);
+           // printAllParkingLotsOfMyTime(setTimeOfParking(),printWorkHourStart(line),printWorkHourEnd(line),line);
+            printParkingLotsInConsol(setTimeOfParking(),printWorkHourStart(line),printWorkHourEnd(line), line);
         }
     }
+    private static void printParkingLotsInConsol(LocalTime myTime, LocalTime workHourStart, LocalTime workHourEnd, String line){
+        if(myTime.isAfter(workHourStart) && myTime.isBefore(workHourEnd)){
+            System.out.println(line);
+        }
+    }
+
     private static void printAllParkingLotsOfMyTime(LocalTime myTime, LocalTime workHourStart, LocalTime workHourEnd, String line){
         try {
             FileWriter myWriter = new FileWriter("parking_info.txt");
@@ -38,7 +45,7 @@ public class ParkingInfo {
         //Scanner timeInput = new Scanner(System.in);
        // System.out.println("Input time what you want in format \"HH:mm:ss\":");
        // String timeStr = timeInput.nextLine();
-        LocalTime timeLocal = LocalTime.parse("12:00:00",DateTimeFormatter.ofPattern("HH:mm:ss"));
+        LocalTime timeLocal = LocalTime.parse("19:00:00",DateTimeFormatter.ofPattern("HH:mm:ss"));
       //  timeInput.close();
         return timeLocal;
     }
